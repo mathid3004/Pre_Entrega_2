@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Milo - Simulador de Prestamos</h1>
+    <div id = "divListaPrestamos">
+        <h2>Lista de Prestamos disponibles</h2>
+    </div>
+    <div>
+        <div>
+            <h3>Elija un prestamo para hacer la simulacion</h3>
+        </div>
+        <form id = "datosFormulario">
+            <label for= "id"> Id </label>
+            <input type = text  id = "identificador" name = "identificador"> 
+            <label for= "monto"> Monto </label>
+            <input type = text  id = "monto" name = "monto"> 
+            <button id = "botonEnviar">Enviar</button>
+        </form>
+        <div>
+            <p></p>
+        </div>
+        <div>
+            <h3>Ingrese los datos del cliente para solicitar un prestamo</h3>
+        </div>
+        <form id = "datosClientes">
+            <label for= "cedula"> Cedula </label>
+            <input type = text  id = "cedula" name = "cedula"> 
+            <label for= "nombre"> Nombre y Apellido </label>
+            <input type = text  id = "nombre" name = "nombre"> 
+            <label for= "correo"> Correo </label>
+            <input type = text  id = "correo" name = "correo"> 
+            <button id = "botonEnviarCliente">Enviar</button>
+        </form>
+        <div>
+            <p></p>
+        </div>
+        <div>
+            <h3>Ingrese la cedula del cliente para ver la solicitud</h3>
+        </div>
+        <form id = "recuperarDatosClientes">
+            <label for= "cedula"> Cedula </label>
+            <input type = text  id = "cedula" name = "cedula"> 
+            <button id = "botonRecuperarDatos">Enviar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
